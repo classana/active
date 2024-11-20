@@ -1,0 +1,63 @@
+## 1. Créer une Unité d'Organisation (OU)
+Ouvrir "Utilisateurs et Ordinateurs Active Directory" :
+
+Depuis le serveur, cliquez sur Gestionnaire de serveur > Outils > Utilisateurs et ordinateurs Active Directory.
+Naviguer dans le domaine :
+
+Dans le volet gauche, développez le domaine wilders.lan.
+Créer une nouvelle OU :
+
+Faites un clic droit sur le domaine wilders.lan et sélectionnez Nouveau > Unité d'organisation.
+Nommez la nouvelle OU : Wilders_students.
+Cliquez sur OK.
+2. Créer un Groupe d'Utilisateurs
+Accéder à l'OU "Wilders_students" :
+
+Dans la console "Utilisateurs et ordinateurs Active Directory", développez wilders.lan et sélectionnez Wilders_students.
+Créer un nouveau groupe :
+
+Faites un clic droit sur Wilders_students, puis sélectionnez Nouveau > Groupe.
+Configurez les paramètres suivants :
+Nom du groupe : Students.
+Type de groupe : Sécurité.
+Étendue du groupe : Global.
+Cliquez sur OK.
+3. Créer un Utilisateur dans le Groupe "Students"
+Créer un utilisateur dans l'OU "Wilders_students" :
+
+Faites un clic droit sur Wilders_students, puis sélectionnez Nouveau > Utilisateur.
+Remplissez les champs :
+Prénom : Lassana
+Nom : CAMARA
+Nom de connexion utilisateur : lcamara
+Cliquez sur Suivant.
+Configurer un mot de passe pour l'utilisateur :
+
+Entrez un mot de passe (ex. : Azerty1*).
+Cochez les options selon vos besoins :
+L'utilisateur doit changer le mot de passe à la prochaine ouverture de session : Oui.
+Le mot de passe n’expire jamais : Facultatif.
+Cliquez sur Suivant, puis sur Terminer.
+Ajouter l'utilisateur au groupe "Students" :
+
+Faites un clic droit sur Lassana CAMARA, puis sélectionnez Propriétés.
+Allez dans l'onglet Membre, puis cliquez sur Ajouter.
+Tapez Students, cliquez sur Vérifier les noms, puis sur OK.
+Cliquez sur Appliquer puis sur OK.
+Vérification
+Vérifier l'utilisateur dans le groupe :
+
+Faites un clic droit sur le groupe Students, puis cliquez sur Propriétés.
+Accédez à l'onglet Membres. L'utilisateur John Lassana CAMARA doit y figurer.
+Tester la connexion de l'utilisateur :
+
+Connectez-vous avec les identifiants suivants sur un poste client :
+Nom d'utilisateur : lcamara
+Mot de passe : Azerty1* (ou celui configuré).
+Conclusion
+Vous avez maintenant :
+
+Créé une Unité d'Organisation Wilders_students.
+Créé un Groupe Students dans cette OU.
+Ajouté un utilisateur John Doe au groupe.
+Ce processus garantit une organisation claire et permet une gestion centralisée des utilisateurs.
